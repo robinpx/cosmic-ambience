@@ -5,8 +5,8 @@ import processing.serial.*;
 String myString = null;
 Serial myPort;
 
-int NUM_OF_VALUES = 4;   /** YOU MUST CHANGE THIS ACCORDING TO YOUR PROJECT **/
-int[] sensorValues;      /** this array stores values from Arduino **/
+int NUM_OF_VALUES = 4;  
+int[] sensorValues;      
 
 float maxDistance = 30;
 
