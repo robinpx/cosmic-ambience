@@ -40,6 +40,8 @@ float animateTriPos = 0;
 float triPos = -10;
 float shootTri, shootTri2;
 
+float bubbleSize = 0;
+
 /* HUES */
 color bgColor = #000000; // #03083a
 color triColor = 255;
@@ -125,9 +127,9 @@ void setup() {
   bgFFT = new FFT(bg.bufferSize(), bg.sampleRate());
   
   for (int i=0;i < 3;i++) {
-    beats.add(minim.loadFile("audio/" + assetNames[0] + i + ".mp3"));
-    AudioPlayer theBeat = beats.get(i);
-    beatsFFT.add(new FFT(theBeat.bufferSize(), theBeat.sampleRate()));
+      beats.add(minim.loadFile("audio/" + assetNames[0] + i + ".mp3"));
+      AudioPlayer theBeat = beats.get(i);
+      beatsFFT.add(new FFT(theBeat.bufferSize(), theBeat.sampleRate()));
       twinklys.add(minim.loadFile("audio/" + assetNames[1] + i + ".mp3"));
       AudioPlayer theTwinkly = twinklys.get(i);
       twinklysFFT.add(new FFT(theTwinkly.bufferSize(), theTwinkly.sampleRate()));
@@ -156,7 +158,6 @@ void draw() {
   createSpheres();
 }
 
-float bubbleSize = 0;
 void createBubbles() {
     
   float ambienceBand = 0;
@@ -704,7 +705,4 @@ void change() {
      }
    }
  }
- 
- 
- 
 }
