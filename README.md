@@ -1,2 +1,2 @@
-# spacetime-symphony
-Interactive Audio Visual Experience with Processing 3D and Arduino
+# Cosmic Ambience
+Interactive Audio Visual with Processing 3D and Arduino
