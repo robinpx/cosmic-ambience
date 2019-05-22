@@ -523,8 +523,6 @@ void updateSerial() {
 }
 
 void change() {
-  /* BEATS */
- 
  float sensor1 = sensorValues[0];
  float sensor2 = sensorValues[1];
  float sensor3 = sensorValues[2];
