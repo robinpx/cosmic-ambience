@@ -76,18 +76,6 @@ ArrayList<FFT> ambiencesFFT = new ArrayList<FFT>();
 
 /* 
 
-ArrayList of all the current assets playing in the every line
-index -1 = none
-index 0 = beats
-index 1 = twinklys
-index 2 = womps
-index 3 = ambiences
-
-*/
-ArrayList<AudioPlayer> currentAssets = new ArrayList<AudioPlayer>();  
-
-/* 
-
 index of what current beat, twinkly, womp, and ambience that is playing
 
 */
